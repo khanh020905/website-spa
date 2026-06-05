@@ -14,6 +14,16 @@ body {
   font-family: var(--font-sans);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  body, 
+  body *, 
+  a, 
+  button, 
+  .cursor-pointer {
+    cursor: none !important;
+  }
+}
+
 .hero-bg {
   background-image:
     linear-gradient(rgba(8, 20, 14, .35), rgba(8, 20, 14, .8)),

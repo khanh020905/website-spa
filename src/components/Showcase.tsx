@@ -41,34 +41,40 @@ export default function Showcase() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="image-card card h-[520px] rounded-[2rem] shadow-2xl"
-            style={{ 
-              backgroundImage: "url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=90')",
-              y: card1Y, rotate: cardRotate1
-            }}
-          />
+            className="card h-[520px] rounded-[2rem] shadow-2xl overflow-hidden group cursor-pointer"
+            style={{ y: card1Y, rotate: cardRotate1 }}
+          >
+            <div 
+              className="w-full h-full image-card transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:brightness-110"
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=90')" }}
+            />
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-            className="image-card card h-[420px] rounded-[2rem] md:mt-24 shadow-2xl"
-            style={{ 
-              backgroundImage: "url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=90')",
-              y: card2Y, rotate: cardRotate2
-            }}
-          />
+            className="card h-[420px] rounded-[2rem] md:mt-24 shadow-2xl overflow-hidden group cursor-pointer"
+            style={{ y: card2Y, rotate: cardRotate2 }}
+          >
+            <div 
+              className="w-full h-full image-card transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:brightness-110"
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=90')" }}
+            />
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="image-card card h-[520px] rounded-[2rem] shadow-2xl"
-            style={{ 
-              backgroundImage: "url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=90')",
-              y: card3Y, rotate: cardRotate3
-            }}
-          />
+            className="card h-[520px] rounded-[2rem] shadow-2xl overflow-hidden group cursor-pointer"
+            style={{ y: card3Y, rotate: cardRotate3 }}
+          >
+            <div 
+              className="w-full h-full image-card transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:brightness-110"
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=90')" }}
+            />
+          </motion.div>
         </div>
       </div>
     </section>
