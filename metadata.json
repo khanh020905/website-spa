@@ -1,0 +1,6 @@
+{
+  "name": "Aurelia Spa",
+  "description": "A luxury wellness sanctuary offering cinematic spa experiences and rituals",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
